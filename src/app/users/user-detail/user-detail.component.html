@@ -1,0 +1,49 @@
+
+  <form class="user-form" #f="ngForm">
+
+  <div class="form-group">
+    <label for="name">Name</label>
+
+    <input  name="name" id="name"
+            [(ngModel)]="user.name"
+            required
+            #name="ngModel"/>
+
+    <span [hidden]="name.valid || name.pristine" [ngClass]="'invalid-formfield'">Il nome é obbligatorio!</span>
+  </div>
+
+  <div class="form-group">
+    <label for="lastname">Last Name</label>
+    <input [(ngModel)]="user.lastname" required
+           #lastname="ngModel"
+           name="lastname" id="lastname" />
+    <p>
+      <span [hidden]="lastname.valid || lastname.pristine" [ngClass]="'invalid-formfield'">Il cognome é obbligatorio!</span>
+    </p>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input [(ngModel)]="user.email" required
+           #email="ngModel"
+           type="email"  name="email" id="email" />
+    <span [hidden]="email.valid || email.pristine" [ngClass]="'invalid-formfield'">L'email é obbligatorio!</span>
+  </div>
+
+  <div class="form-group">
+    <label for="active">Active</label>
+    <input [(ngModel)]="user.active" required
+           #active="ngModel"
+           type="number" name="active" id="active" />
+    <span [hidden]="active.valid || active.pristine"
+          [ngClass]="'invalid-formfield'">Lo stato é obbligatorio!</span>
+  </div>
+  <div class="form-group form-footer">
+
+    <button class="btn-save" (click)="resetForm(f.form)">Reset</button>
+
+    <button [ngClass]="{'btn-save': f.valid, 'btn-save-disabled':!f.valid}"
+            (click)="saveUser()"
+            [disabled]="!f.valid">Save</button>
+  </div>
+</form>

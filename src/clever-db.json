@@ -1,0 +1,145 @@
+{
+
+  "books": [
+    {
+      "id": 1,
+      "title": "Angular in Action",
+      "pages": 299,
+      "author": {
+        "id": 10,
+        "name": "Jeremy ",
+        "lastname": "Wilken"
+      }
+    }, {
+      "id": 2,
+      "title": "Il vecchio e il mare",
+      "pages": 440,
+      "author": {
+        "id": 11,
+        "name": "Ernest ",
+        "lastname": "Hemingway"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Il vento va e poi ritorna",
+      "pages": 404,
+      "author": {
+        "id": 12,
+        "name": "Vladimir",
+        "lastname": "Bukovskij"
+      }
+    },
+    {
+      "id": 4,
+      "title": "Il Processo",
+      "pages": 272,
+      "author": {
+        "id": 13,
+        "name": "Franz",
+        "lastname": "Kafka"
+      }
+    },
+    {
+      "id": 5,
+      "title": "Alla ricerca del tempo perduto",
+      "pages": 551,
+      "author": {
+        "id": 14,
+        "name": "Marcel",
+        "lastname": "Proust"
+      }
+    }
+  ],
+  "authors": [
+    {
+      "id": 10,
+      "name": "Jeremy ",
+      "lastname": "Wilken",
+      "bithday": 1980
+    }, {
+      "id": 11,
+      "name": "Ernest ",
+      "lastname": "Hemingway",
+      "birthday": 1899,
+      "death": 1961
+    }, {
+      "id": 12,
+      "name": "Vladimir",
+      "lastname": "Bukovskij",
+      "birthday":1942
+    }, {
+      "id": 13,
+      "name": "Franz",
+      "lastname": "Kafka",
+      "birthday": 1883,
+      "death": 1924
+    }, {
+      "id": 14,
+      "name": "Marcel",
+      "lastname": "Proust",
+      "birthday": 1871,
+      "death": 1922
+    }
+  ],
+  "rents": [
+    {
+      "id": 1001,
+      "data_start": "19/03/2019",
+      "data_end": "19/04/2019",
+      "user": {
+        "id": 1,
+        "name": "Mario",
+        "lastname": "Rossi"
+      },
+      "book": {
+        "id": 3,
+        "title": "Il vento va e poi ritorna"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Mario",
+      "lastname": "Rossi",
+      "username": "user1user",
+      "password": "user1pwd",
+      "token": "efoiwejo32r31-fake-token",
+      "roles": [
+        {
+          "code": "ROLE_USER"
+        }, {
+          "code": "ROLE_ADMIN"
+        }
+      ]
+    }, {
+      "id": 2,
+      "name": "Sara",
+      "lastname": "Senigallia",
+      "username": "user2user",
+      "password": "user2pwd",
+      "token": "efoiwejo32r32-fake-token",
+      "roles": [
+        {
+          "code": "ROLE_USER"
+        }
+      ]
+    }, {
+      "id": 3,
+      "name": "Matteo",
+      "lastname": "Mattei",
+      "username": "user3user",
+      "password": "user3pwd",
+      "token": "efoiwejo32r33-fake-token",
+      "roles": [
+        {
+          "code": "ROLE_USER"
+        }
+      ]
+    }
+  ],
+  "login": {
+    "token": "efoiwejo32r32-fake-token"
+  }
+}
